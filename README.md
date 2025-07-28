@@ -1,12 +1,76 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# mi-proyecto-react
 
-Currently, two official plugins are available:
+Este es un proyecto creado con Vite y React para desplegar un portafolio/currículum en línea.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Material UI (MUI)](https://mui.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [html2canvas](https://html2canvas.hertzen.com/)
+- [html2pdf.js](https://ekoopmans.github.io/html2pdf.js/)
+- [Lucide React Icons](https://lucide.dev/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Scripts disponibles
+
+En el directorio del proyecto, puedes ejecutar:
+
+### `npm run dev`
+Inicia el servidor de desarrollo.
+
+### `npm run build`
+Compila el proyecto para producción en la carpeta `dist`.
+
+### `npm run preview`
+Previsualiza el proyecto ya compilado.
+
+### `npm run deploy`
+Despliega el contenido de `dist` en GitHub Pages.
+
+> Asegúrate de tener el paquete `gh-pages` instalado y configurado correctamente en tu proyecto.
+
+## Configuración para despliegue en GitHub Pages
+
+- En `vite.config.js`, configura correctamente la base:
+
+```js
+base: '/mi-proyecto-react/'
+```
+
+- En `package.json`, incluye la propiedad `homepage`:
+
+```json
+"homepage": "https://FacundoAC.github.io/mi-proyecto-react"
+```
+
+## Estructura del proyecto
+
+```
+mi-proyecto-react/
+├── public/
+├── src/
+│   ├── components/
+│   ├── assets/
+│   └── App.jsx
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## Requisitos
+
+- Node.js
+- npm
+
+## Instalación
+
+```bash
+npm install
+```
+
+---
+
+Desarrollado por Facundo Angulo Cabrera.
